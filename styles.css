@@ -1,18 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    margin:0;
-    padding:0;
-    background-image: url(img.jpg);
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+    width: 100%;
+    height: 100vh;
+}
+ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.sub-menu1 ul{
+    margin-left: 55px;
 }
 .navigation{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: rgb(255, 115, 0);  */
+    height: 10vh;
+    width: 100vw;
 }
 .logo{
     color: #ffff;
     padding-left: 80px;
     width: 40%;
+    font-size: 30px;
 }
 .navigation ul{
     display: flex;
@@ -22,17 +35,31 @@ body{
     width: 60%;
 }
 .navigation ul li{
-    color:#ffff;
+    color:#ee1111;
     list-style: none;
-    /* background-color: rgb(137, 239, 239); */
+    /* background-color: rgb(255, 255, 6); */
+    padding: 8px;
+    margin: 5px;
+    border-radius: 18px;
+    font-size: 17px;
+    font-family: sans-serif,monospace;
+    font-weight: 500;
+    /* width: 80px; */
+    box-shadow: 0 4px 8px rgb(80, 172, 80);
+    cursor: pointer;
 }
-.navigation ul li a:hover, .active {
-   color: rgb(248, 252, 252);
+.navigation ul li:hover{
+    box-shadow: 0 4px 8px aqua;
 }
 .navigation ul li a{
     text-decoration: none;
+    color: aqua;
 
 }
+.navigation ul li a:hover, .active {
+    color: rgb(248, 252, 252) !important;
+}
+
 .navigation ul li .menu ul{
     display: flex;
     flex-direction: column;
@@ -51,13 +78,12 @@ body{
     position: absolute;
     display: none;
 } */
+
 .navigation ul li .menu ul .menu1 .sub-menu1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.navigation ul li .menu ul .menu1 .sub-menu1{
     display: none;
     position: absolute;
 }
@@ -81,3 +107,13 @@ body{
     display: block;
     position: absolute;
 }
+main{
+    height: 83vh;
+    width: 100%;
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+
+/* <<<<<<<<<<<<**********responsiveness************>>>>>>>>>>>>> */
+
+   
